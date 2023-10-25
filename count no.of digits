@@ -1,0 +1,19 @@
+//Count digits, say user entered 1234. The count of this number is 4, because there are 4 digits in this number.
+package loops;
+import java.util.Scanner;
+public class count {
+
+	public static void main(String[] args) {
+		Scanner obj=new Scanner(System.in);
+		System.out.println("Enter the number");
+		int num=obj.nextInt();
+		int count=0;
+		while(num!=0) {
+			num=num/10;
+			count++;
+		}
+		System.out.println("number of digits are"+" "+count);
+		obj.close();
+	}
+
+}
