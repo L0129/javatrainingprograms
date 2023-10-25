@@ -1,0 +1,21 @@
+package functions;
+import java.util.Scanner;
+public class Ex1 {
+	static float Simplein(float priciple,float rate,float time) {
+		float si=priciple*rate*time/100;
+		return si;
+	}
+
+	public static void main(String[] args) {
+		Scanner obj=new Scanner(System.in);
+		System.out.println("Enter the principle");
+		float priciple=obj.nextFloat();
+		System.out.println("Enter the rate");
+		float rate=obj.nextFloat();
+		System.out.println("Enter the time");
+		float time=obj.nextFloat();
+		float res=Simplein(priciple,rate,time);
+		System.out.println("Simple interest is"+res);
+		obj.close();
+	}
+}
