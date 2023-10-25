@@ -1,0 +1,47 @@
+package javap;
+import java.util.Scanner;
+public class season {
+
+	public static void main(String[] args) {
+		Scanner obj=new Scanner(System.in);
+		System.out.println("Enter the month that you want to know the season");
+		int month=obj.nextInt();
+		System.out.println("enter 1 to check for winter");
+		System.out.println("enter 2 to check for summer");
+		System.out.println("enter 3 to check for spring");
+		System.out.println("enter 4 to check for fall");
+		int choice=obj.nextInt();
+		switch(choice) {
+		case 1:
+			if((month==12)|| (month==1)|| (month==2)||(month==3)) {
+			System.out.println("Season of this month is Winter");}
+			else {
+				System.out.println("not a winter season");}
+			break;
+		case 2:
+			if((month==6)|| (month==7)|| (month==8)||(month==9)) {
+			System.out.println("Season of this month is Summer");}
+			else {
+			System.out.println("not a Summer season");}
+			break;
+
+		case 3:
+			if((month==3)|| (month==4)|| (month==5)||(month==6)) {
+			System.out.println("Season of this month is Spring");}
+			else {
+				System.out.println("not a Spring season");}
+			break;
+
+		case 4:
+			if((month==9)|| (month==10)|| (month==11)||(month==12)) {
+			System.out.println("Season of this month is Fall");}
+			else {
+				System.out.println("not a Fall");}
+			break;
+		default:
+			System.out.println("Invalid input");
+		}
+		obj.close();
+	}
+
+}
