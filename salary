@@ -1,0 +1,21 @@
+package javap;
+
+import java.util.Scanner;
+
+public class salary {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		int pf=1500;
+		float hra,da,ta;
+		Scanner obj=new Scanner(System.in);
+		System.out.println("enter the basic salary");
+		float bs=obj.nextFloat();
+		hra= bs*30/100;
+		da= bs*10/100;
+		ta =bs*20/100;
+		System.out.println("net salary="+(bs+hra+da+ta-pf));
+		obj.close();
+	}
+
+}
