@@ -1,0 +1,25 @@
+package functions;
+import java.util.Scanner;
+public class Ex3 {
+	static int swap1(int num1,int num2) {
+		num1=num1+num2;
+		num2=num1-num2;
+		return num1=num1-num2;
+	}
+	static int swap2(int num1,int num2) {
+		num1=num1+num2;
+		num2=num1-num2;
+		return num2;
+	}
+	public static void main(String[] args) {
+		Scanner obj=new Scanner(System.in);
+		System.out.println("Enter the Number 1");
+		int num1=obj.nextInt();
+		System.out.println("Enter the Number 2");
+		int num2=obj.nextInt();
+		int l=swap1(num1, num2);
+		int b=swap2(num1,num2);
+		System.out.println("ater swapping numbers a is "+l+" "+"ater swapping numbers b is "+b);
+		obj.close();
+	}
+}
