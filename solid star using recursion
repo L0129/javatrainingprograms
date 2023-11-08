@@ -1,0 +1,25 @@
+package recurs;
+public class recurs1 {
+	static void printRow(int startcount) {
+		if(startcount==0) {
+			return;
+		}
+		System.out.print("*");
+		printRow(startcount-1);
+	}
+	static void printPattern(int col,int row) {
+		if (row==0) {
+			return;
+	}
+		printRow(col);
+		System.out.println();
+		printPattern(col,row-1);
+		
+    }
+	
+	public static void main(String[] args) {
+		printPattern(5,5);
+		
+	}
+
+}
