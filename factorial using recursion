@@ -1,0 +1,20 @@
+package recurs;
+import java.util.Scanner;
+public class recurs4 {
+
+	static int fact(int num) {
+		if(num==0) {
+			return 1;
+		}
+		return num*fact(num-1);
+	}
+	public static void main(String[] args) {
+		Scanner obj=new Scanner(System.in);
+		System.out.println("Enter the number thet which you want the factorial");
+		int n=obj.nextInt();
+		int fac=fact(n);
+		System.out.println("factorial is "+fac);
+
+	}
+
+}
